@@ -2,21 +2,6 @@
 
 A scalable distributed system that enables users to upload, index, and perform fast, ranked full-text search on documents with metadata filtering.
 
-📺 Demo Video: <https://www.youtube.com/watch?v=geLpQBqGX0U>
-
----
-
-## 🔗 Project Structure
-
-This project is split into two repositories:
-
-- **Backend (Spring Boot + Kafka + Elasticsearch)**  
-  https://github.com/21Priyanshu/distributed-document-search-engine
-
-- **Frontend (React UI)**  
-  https://github.com/21Priyanshu/distributed-document-search-engine-ui
-
----
 
 ## ✨ Features
 
@@ -77,10 +62,6 @@ User → API Gateway → Search Service → Redis → Elasticsearch
 
 ### 1. Clone Repository
 
-```bash
-git clone https://github.com/21Priyanshu/distributed-document-search-engine
-cd distributed-document-search-engine 
-``` 
 
 ### 2. Start infrastructurw
 
