@@ -110,7 +110,7 @@ Change the diretory to common events
     mvn spring-boot:run
 
 ### 4. Run frontend
-    git clone https://github.com/21Priyanshu/distributed-document-search-engine-ui
+    git clone https://github.com/Sunitab-7869/distributed-document-search-engine-ui
 
     cd distributed-document-search-engine-ui
 
