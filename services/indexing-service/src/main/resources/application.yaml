@@ -1,0 +1,40 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: search-indexer-service
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/documents_db
+    username: doc_user
+    password: doc_pass
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: search-indexer
+      auto-offset-reset: earliest
+      enable-auto-commit: false
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: com.priyanshu.documents.common.events,com.priyanshu.documents
+        spring.json.type.mapping: DocumentUploadedEvent:com.priyanshu.documents.common.events.DocumentUploadedEvent,DocumentDeletedEvent:com.priyanshu.documents.common.events.DocumentDeletedEvent,com.priyanshu.documents.DocumentDeletedEvent:com.priyanshu.documents.common.events.DocumentDeletedEvent
+    listener:
+      ack-mode: manual
+
+elasticsearch:
+  host: localhost
+  port: 9200
+
+minio:
+  url: http://localhost:9000
+  access-key: minioadmin
+  secret-key: minioadmin
+  bucket: documents
