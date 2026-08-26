@@ -1,13 +1,13 @@
-// package com.priyanshu.documents.document_service.messaging;
+// package com.documentsearchu.documents.document_service.messaging;
 
 // import java.util.UUID;
 
 // import org.springframework.kafka.annotation.KafkaListener;
 // import org.springframework.stereotype.Component;
 
-// import com.priyanshu.documents.document_service.entity.Document;
-// import com.priyanshu.documents.document_service.entity.DocumentStatus;
-// import com.priyanshu.documents.document_service.repository.DocumentRepository;
+// import com.documentsearchu.documents.document_service.entity.Document;
+// import com.documentsearchu.documents.document_service.entity.DocumentStatus;
+// import com.documentsearchu.documents.document_service.repository.DocumentRepository;
 
 // import jakarta.transaction.Transactional;
 

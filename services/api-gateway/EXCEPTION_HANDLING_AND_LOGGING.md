@@ -18,36 +18,36 @@ The API Gateway implements a custom exception hierarchy for better error managem
 
 #### Exception Classes
 
-1. **GatewayException** (`com.priyanshu.api_gateway.exceptions.GatewayException`)
+1. **GatewayException** (`com.documentsearchu.api_gateway.exceptions.GatewayException`)
    - Base exception class for all API Gateway errors
    - Includes HTTP status code and error code
    - Properties:
      - `statusCode`: HTTP status code
      - `errorCode`: Machine-readable error identifier
 
-2. **UnauthorizedException** (`com.priyanshu.api_gateway.exceptions.UnauthorizedException`)
+2. **UnauthorizedException** (`com.documentsearchu.api_gateway.exceptions.UnauthorizedException`)
    - Thrown when authentication/authorization fails
    - HTTP Status: 401 Unauthorized
    - Error Code: `UNAUTHORIZED`
 
-3. **InvalidTokenException** (`com.priyanshu.api_gateway.exceptions.InvalidTokenException`)
+3. **InvalidTokenException** (`com.documentsearchu.api_gateway.exceptions.InvalidTokenException`)
    - Thrown when JWT token is invalid or expired
    - HTTP Status: 401 Unauthorized
    - Error Code: `INVALID_TOKEN`
 
-4. **ServiceUnavailableException** (`com.priyanshu.api_gateway.exceptions.ServiceUnavailableException`)
+4. **ServiceUnavailableException** (`com.documentsearchu.api_gateway.exceptions.ServiceUnavailableException`)
    - Thrown when downstream service is unavailable
    - HTTP Status: 503 Service Unavailable
    - Error Code: `SERVICE_UNAVAILABLE`
 
-5. **GatewayTimeoutException** (`com.priyanshu.api_gateway.exceptions.GatewayTimeoutException`)
+5. **GatewayTimeoutException** (`com.documentsearchu.api_gateway.exceptions.GatewayTimeoutException`)
    - Thrown when request to downstream service times out
    - HTTP Status: 504 Gateway Timeout
    - Error Code: `GATEWAY_TIMEOUT`
 
 ### Global Exception Handler
 
-**Class**: `com.priyanshu.api_gateway.handlers.GlobalExceptionHandler`
+**Class**: `com.documentsearchu.api_gateway.handlers.GlobalExceptionHandler`
 
 The `GlobalExceptionHandler` is a `@RestControllerAdvice` that provides centralized exception handling for the entire application. It catches all exceptions and returns standardized error responses.
 
@@ -111,7 +111,7 @@ The API Gateway uses **SLF4J** with **Logback** for logging. Configuration is pr
 | Component | Level | Purpose |
 |-----------|-------|---------|
 | Root Logger | INFO | General application logging |
-| com.priyanshu.api_gateway | DEBUG | API Gateway component logging |
+| com.documentsearchu.api_gateway | DEBUG | API Gateway component logging |
 | GlobalExceptionHandler | DEBUG | Exception handling details |
 | org.springframework.security | DEBUG | Security framework logging |
 | org.springframework.cloud.gateway | DEBUG | Gateway routing details |
@@ -121,7 +121,7 @@ The API Gateway uses **SLF4J** with **Logback** for logging. Configuration is pr
 
 #### Console Output
 - **Pattern**: `%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n`
-- **Example**: `10:15:30.123 [http-nio-8080-exec-1] DEBUG com.priyanshu.api_gateway.security.SecurityConfig - CSRF protection disabled`
+- **Example**: `10:15:30.123 [http-nio-8080-exec-1] DEBUG com.documentsearchu.api_gateway.security.SecurityConfig - CSRF protection disabled`
 
 #### File Output
 - **Main Log**: `logs/api-gateway.log`
@@ -190,7 +190,7 @@ public class MyService {
 logging:
   level:
     root: INFO
-    com.priyanshu.api_gateway: DEBUG
+    com.documentsearchu.api_gateway: DEBUG
     org.springframework.security: DEBUG
     org.springframework.cloud.gateway: DEBUG
     org.springframework.web: INFO

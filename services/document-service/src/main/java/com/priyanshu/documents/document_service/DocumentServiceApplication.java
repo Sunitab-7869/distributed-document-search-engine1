@@ -1,4 +1,4 @@
-package com.priyanshu.documents.document_service;
+package com.documentsearchu.documents.document_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

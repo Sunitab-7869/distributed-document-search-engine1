@@ -8,7 +8,7 @@
 		<version>4.1.0-M1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.priyanshu.documents</groupId>
+	<groupId>com.documentsearchu.documents</groupId>
 	<artifactId>search-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>search-service</name>

@@ -51,7 +51,7 @@ spring:
 logging:
   level:
     root: INFO
-    com.priyanshu.api_gateway: DEBUG
+    com.documentsearchu.api_gateway: DEBUG
     org.springframework.security: DEBUG
     org.springframework.cloud.gateway: DEBUG
     org.springframework.web: INFO

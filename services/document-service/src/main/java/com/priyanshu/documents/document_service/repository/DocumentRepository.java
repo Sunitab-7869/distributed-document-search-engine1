@@ -1,4 +1,4 @@
-package com.priyanshu.documents.document_service.repository;
+package com.documentsearchu.documents.document_service.repository;
 
 import java.util.List;
 import java.util.Optional;
@@ -13,8 +13,8 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-import com.priyanshu.documents.document_service.entity.Document;
-import com.priyanshu.documents.document_service.entity.DocumentStatus;
+import com.documentsearchu.documents.document_service.entity.Document;
+import com.documentsearchu.documents.document_service.entity.DocumentStatus;
 
 @EnableJpaRepositories
 public interface DocumentRepository extends JpaRepository<Document, UUID> {

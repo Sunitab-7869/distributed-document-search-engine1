@@ -1,10 +1,10 @@
-package com.priyanshu.documents.document_service.service;
+package com.documentsearchu.documents.document_service.service;
 
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
-import com.priyanshu.documents.common.events.DocumentUploadedEvent;
-import com.priyanshu.documents.common.events.DocumentDeletedEvent;
+import com.documentsearchu.documents.common.events.DocumentUploadedEvent;
+import com.documentsearchu.documents.common.events.DocumentDeletedEvent;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

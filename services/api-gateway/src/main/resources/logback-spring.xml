@@ -55,9 +55,9 @@
     </root>
 
     <!-- API Gateway specific logging -->
-    <logger name="com.priyanshu.api_gateway" level="DEBUG"/>
-    <logger name="com.priyanshu.api_gateway.handlers.GlobalExceptionHandler" level="DEBUG"/>
-    <logger name="com.priyanshu.api_gateway.security" level="DEBUG"/>
+    <logger name="com.documentsearchu.api_gateway" level="DEBUG"/>
+    <logger name="com.documentsearchu.api_gateway.handlers.GlobalExceptionHandler" level="DEBUG"/>
+    <logger name="com.documentsearchu.api_gateway.security" level="DEBUG"/>
 
     <!-- Spring Cloud Gateway logging -->
     <logger name="org.springframework.cloud.gateway" level="DEBUG"/>

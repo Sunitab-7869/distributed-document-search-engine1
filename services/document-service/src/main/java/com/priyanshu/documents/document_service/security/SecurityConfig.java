@@ -1,4 +1,4 @@
-package com.priyanshu.documents.document_service.security;
+package com.documentsearchu.documents.document_service.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

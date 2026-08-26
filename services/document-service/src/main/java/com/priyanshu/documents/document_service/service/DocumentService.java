@@ -1,4 +1,4 @@
-package com.priyanshu.documents.document_service.service;
+package com.documentsearchu.documents.document_service.service;
 
 import java.io.InputStream;
 import java.nio.file.AccessDeniedException;
@@ -17,14 +17,14 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.priyanshu.documents.document_service.dto.DocumentListItem;
-import com.priyanshu.documents.document_service.entity.Document;
-import com.priyanshu.documents.document_service.entity.DocumentStatus;
-import com.priyanshu.documents.document_service.entity.UploadRequest;
-import com.priyanshu.documents.document_service.exception.DocumentServiceException;
-import com.priyanshu.documents.document_service.exception.NotFoundException;
-import com.priyanshu.documents.document_service.repository.DocumentRepository;
-import com.priyanshu.documents.document_service.repository.UploadRequestRepository;
+import com.documentsearchu.documents.document_service.dto.DocumentListItem;
+import com.documentsearchu.documents.document_service.entity.Document;
+import com.documentsearchu.documents.document_service.entity.DocumentStatus;
+import com.documentsearchu.documents.document_service.entity.UploadRequest;
+import com.documentsearchu.documents.document_service.exception.DocumentServiceException;
+import com.documentsearchu.documents.document_service.exception.NotFoundException;
+import com.documentsearchu.documents.document_service.repository.DocumentRepository;
+import com.documentsearchu.documents.document_service.repository.UploadRequestRepository;
 
 import io.minio.GetObjectArgs;
 import io.minio.MinioClient;
@@ -33,7 +33,7 @@ import io.minio.RemoveObjectArgs;
 import io.minio.errors.MinioException;
 import jakarta.persistence.EntityNotFoundException;
 import jakarta.transaction.Transactional;
-import com.priyanshu.documents.common.events.DocumentUploadedEvent;
+import com.documentsearchu.documents.common.events.DocumentUploadedEvent;
 
 @Service
 public class DocumentService {

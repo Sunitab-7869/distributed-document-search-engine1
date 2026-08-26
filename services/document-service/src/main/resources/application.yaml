@@ -45,7 +45,7 @@ minio:
 
 logging:
   level:
-    com.priyanshu.documents.document_service: INFO
+    com.documentsearchu.documents.document_service: INFO
     org.springframework.security: DEBUG
     org.springframework.web: DEBUG
     org.hibernate.SQL: DEBUG

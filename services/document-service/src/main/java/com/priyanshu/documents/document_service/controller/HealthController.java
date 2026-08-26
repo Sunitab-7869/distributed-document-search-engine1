@@ -1,4 +1,4 @@
-package com.priyanshu.documents.document_service.controller;
+package com.documentsearchu.documents.document_service.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

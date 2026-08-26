@@ -1,4 +1,4 @@
-package com.priyanshu.documents.document_service.security;
+package com.documentsearchu.documents.document_service.security;
 
 import java.nio.charset.StandardCharsets;
 import java.security.Key;

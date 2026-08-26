@@ -6,7 +6,7 @@ spring:
 
 logging:
   level:
-    com.priyanshu.documents.search_service: INFO
+    com.documentsearchu.documents.search_service: INFO
     org.springframework.security: WARN
     co.elastic.clients: WARN
   pattern:

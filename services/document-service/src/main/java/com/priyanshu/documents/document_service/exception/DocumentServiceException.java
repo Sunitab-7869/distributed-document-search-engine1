@@ -1,4 +1,4 @@
-package com.priyanshu.documents.document_service.exception;
+package com.documentsearchu.documents.document_service.exception;
 
 public class DocumentServiceException extends RuntimeException {
 

@@ -8,7 +8,7 @@
 		<version>4.0.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.priyanshu.documents</groupId>
+	<groupId>com.documentsearchu.documents</groupId>
 	<artifactId>document-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>document-service</name>
@@ -92,7 +92,7 @@
 			<version>8.5.7</version>
 		</dependency>
 		<dependency>
-			<groupId>com.priyanshu.documents.common</groupId>
+			<groupId>com.documentsearchu.documents.common</groupId>
 			<artifactId>common-events</artifactId>
 			<version>1.0-SNAPSHOT</version>
 		</dependency>

@@ -8,7 +8,7 @@
 		<version>4.0.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.priyanshu.index</groupId>
+	<groupId>com.documentsearchu.index</groupId>
 	<artifactId>indexing-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>indexing-service</name>
@@ -96,7 +96,7 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.priyanshu.documents.common</groupId>
+			<groupId>com.documentsearchu.documents.common</groupId>
 			<artifactId>common-events</artifactId>
 			<version>1.0-SNAPSHOT</version>
 		</dependency>

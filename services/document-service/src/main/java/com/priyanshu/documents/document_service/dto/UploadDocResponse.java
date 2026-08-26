@@ -1,4 +1,4 @@
-package com.priyanshu.documents.document_service.dto;
+package com.documentsearchu.documents.document_service.dto;
 
 import java.util.UUID;
 

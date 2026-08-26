@@ -1,0 +1,12 @@
+package com.documentsearchu.documents.search_service.dto;
+
+public record SearchResultItem(
+    String documentId,
+    String title,
+    String description,
+    Long fileSize,
+    String status,
+    String createdAt
+) {
+
+}

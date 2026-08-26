@@ -1,4 +1,4 @@
-package com.priyanshu.documents.document_service.exception;
+package com.documentsearchu.documents.document_service.exception;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

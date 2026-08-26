@@ -1,4 +1,4 @@
-package com.priyanshu.documents.document_service.controller;
+package com.documentsearchu.documents.document_service.controller;
 
 import java.io.InputStream;
 import java.nio.file.AccessDeniedException;
@@ -28,14 +28,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.priyanshu.documents.document_service.dto.DocumentListItem;
-import com.priyanshu.documents.document_service.dto.DocumentStatusResponse;
-import com.priyanshu.documents.document_service.dto.UploadDocResponse;
-import com.priyanshu.documents.document_service.entity.Document;
-import com.priyanshu.documents.document_service.entity.DocumentStatus;
-import com.priyanshu.documents.document_service.exception.DocumentServiceException;
-import com.priyanshu.documents.document_service.repository.DocumentRepository;
-import com.priyanshu.documents.document_service.service.DocumentService;
+import com.documentsearchu.documents.document_service.dto.DocumentListItem;
+import com.documentsearchu.documents.document_service.dto.DocumentStatusResponse;
+import com.documentsearchu.documents.document_service.dto.UploadDocResponse;
+import com.documentsearchu.documents.document_service.entity.Document;
+import com.documentsearchu.documents.document_service.entity.DocumentStatus;
+import com.documentsearchu.documents.document_service.exception.DocumentServiceException;
+import com.documentsearchu.documents.document_service.repository.DocumentRepository;
+import com.documentsearchu.documents.document_service.service.DocumentService;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

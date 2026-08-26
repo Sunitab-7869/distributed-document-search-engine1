@@ -1,4 +1,4 @@
-package com.priyanshu.documents.document_service;
+package com.documentsearchu.documents.document_service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

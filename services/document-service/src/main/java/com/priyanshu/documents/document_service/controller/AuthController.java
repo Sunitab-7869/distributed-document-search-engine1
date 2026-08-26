@@ -1,4 +1,4 @@
-package com.priyanshu.documents.document_service.controller;
+package com.documentsearchu.documents.document_service.controller;
 
 import java.util.Map;
 
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.priyanshu.documents.document_service.security.JwtService;
+import com.documentsearchu.documents.document_service.security.JwtService;
 
 @RestController
 @RequestMapping("/auth")
